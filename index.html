@@ -188,13 +188,6 @@
             align-items: center;
             padding: 0 10px;
         }
-        .sticker-img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-        }
 
         /* --- WINDOWS MEDIA PLAYER WIDGET --- */
         .wmp-widget {
@@ -203,68 +196,6 @@
             border-radius: 4px;
             padding: 10px;
             box-shadow: inset 0 1px 0 #fff;
-        }
-
-        .wmp-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 11px;
-            margin-bottom: 8px;
-        }
-        .wmp-art {
-            width: 45px;
-            height: 45px;
-            border: 1px solid #999;
-            background: #444;
-            overflow: hidden;
-        }
-        .wmp-art img { width:100%; height:100%; object-fit:cover; }
-
-        .wmp-controls {
-            background: linear-gradient(to bottom, #dce6f2 0%, #b0c8e4 100%);
-            border: 1px solid #7da2ce;
-            border-radius: 20px;
-            padding: 4px 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-        }
-        .wmp-btn {
-            background: linear-gradient(to bottom, #ffffff 0%, #e2ebf5 100%);
-            border: 1px solid #8fa8c6;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            font-size: 12px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .wmp-btn#wmp-play {
-            width: 34px;
-            height: 34px;
-            background: linear-gradient(to bottom, #99ccff 0%, #3377cc 100%);
-            color: white;
-            border-color: #225599;
-            font-size: 14px;
-        }
-
-        /* Decorative Grid Images Row */
-        .media-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 5px;
-        }
-        .media-grid img {
-            width: 100%;
-            height: 60px;
-            object-fit: cover;
-            border: 1px solid #ccc;
-            border-radius: 3px;
         }
 
         /* --- DISMISSABLE WINDOWS ALERT POPUP --- */
@@ -367,39 +298,27 @@
                     </p>
                     
                     <p style="text-align: justify; margin: 0;">
-                        yessss did you almost cry? heh *chuckles arrogantly* so yea that's all i wanted to say mwah, thank you for being my friendster... i-jejemon ko sana typings para magfit sa theme kaso nag cringe ako di ko kaya sa laptop... pero yea i saw how much you liked the web letter i made kirsten so i was like yep imma do it for you too AGAIN HAPPY BIRTHDAYYYYYYYYYYYYYYYY!!!!!
+                        yessss did you almost cry? heh *chuckles arrogantly* so yea that's all i wanted to say mwah, thank you for being my friendster... i-jejemon ko sana typings para magfit sa theme kaso nag cringe ako di ko kaya sa laptop... pero yea i saw how much you liked the web letter i made for kirsten so i was like yep imma do it for you too AGAIN HAPPY BIRTHDAYYYYYYYYYYYYYYYY!!!!!
                     </p>
                     
                 </div>
             </div>
 
-<div class="deco-row">
-                <img class="sticker-img" src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=150&auto=format&fit=crop" alt="Aero Bubble Detail">
+            <div class="deco-row">
                 <span style="font-size: 24px;">💬🫧</span>
-                <img class="sticker-img" src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=150&auto=format&fit=crop" alt="Hange Icon">
             </div>
             
             <div class="wmp-widget">
-    <div class="section-header">now playing - in bloom by zb1</div>
-    
-    <iframe style="border-radius:12px" 
-        src="https://open.spotify.com/embed/track/3F4lHPNHlvr3RpO4tpVOIs?utm_source=generator&si=62ee5850164141bd"
-        width="100%" 
-        height="152" 
-        frameBorder="0" 
-        allowfullscreen="" 
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-        loading="lazy">
-    </iframe>
-</div>
-                
-                <audio id="wmp-audio" src="bday-song.mp3" loop></audio>
-
-                <div class="wmp-controls">
-                    <button class="wmp-btn">⏮</button>
-                    <button class="wmp-btn" id="wmp-play" onclick="toggleWMP()">▶</button>
-                    <button class="wmp-btn">⏭</button>
-                </div>
+                <div class="section-header">now playing - in bloom by zb1</div>
+                <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/2Z769orofwYunfsR888euF?utm_source=generator"
+                    width="100%" 
+                    height="152" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
             </div>
 
             <div class="ie-popup" id="alertPopup">
@@ -409,10 +328,11 @@
                     <div><strong>Hange Says:</strong> "THIS BIRTHDAY IS AS MAGNIFICENT AS TITANS!"</div>
                 </div>
                 <div class="popup-btn-container">
-                    <button class="popup-btn" onclick="document.getElementById('alertPopup').style.display='none'">DEDICATE YOUR HEART (OK)</button>
+                    <button class="popup-btn" onclick="triggerNextPopup()">DEDICATE YOUR HEART (OK)</button>
                 </div>
             </div>
-<div class="ie-popup" id="secretPopup" style="display: none; margin-top: 10px; border-color: #2b7a2b;">
+
+            <div class="ie-popup" id="secretPopup" style="display: none; margin-top: 10px; border-color: #2b7a2b;">
                 <div class="popup-title" style="color: #1e521e;">✅ Operation Successful!</div>
                 <div class="popup-body">
                     <span style="font-size: 24px;">🎉⚔️</span>
@@ -422,18 +342,18 @@
                     <button class="popup-btn" onclick="document.getElementById('secretPopup').style.display='none'">CLOSE</button>
                 </div>
             </div>
+
         </div>
     </div>
 
-<script>
-    // This function handles switching between the two popups
-    function triggerNextPopup() {
-        // 1. Hide the original Hange warning popup
-        document.getElementById('alertPopup').style.display = 'none';
-        
-        // 2. Show the new secret celebration popup right after
-        document.getElementById('secretPopup').style.display = 'block';
-    }
-</script>
+    <script>
+        function triggerNextPopup() {
+            // 1. Hide the original Hange warning popup
+            document.getElementById('alertPopup').style.display = 'none';
+            
+            // 2. Show the new secret celebration popup right after
+            document.getElementById('secretPopup').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
